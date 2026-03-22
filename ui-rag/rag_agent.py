@@ -183,29 +183,27 @@ def _execute_tool(tool_name: str, tool_args: dict) -> str:
 # ── Boucle agentique ──────────────────────────────────────────────────────────
 
 def _call_ollama_tools(messages: list, model: str) -> dict:
-    """Appel Ollama avec support function calling + streaming."""
+    """Appel Ollama avec support function calling + streaming.
+    Gère la fragmentation des tool_calls (Deepseek, Qwen3, Gemini).
+    """
     payload = json.dumps({
         "model": model,
         "messages": messages,
         "tools": TOOLS,
         "stream": True,
-        "options": {
-            "temperature": 0.3,
-            "top_p": 0.9,
-        }
+        "options": {"temperature": 0.3, "top_p": 0.9},
     }).encode("utf-8")
 
     req = urllib.request.Request(
-        OLLAMA_URL,
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST"
+        OLLAMA_URL, data=payload,
+        headers={"Content-Type": "application/json"}, method="POST"
     )
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
-            final_message = {}
-            tool_calls_acc = []
             content_acc = ""
+            # tool_calls indexés par position pour merger les fragments
+            tool_calls_map = {}  # index -> {id, name, arguments_str}
+            in_think = False
 
             for line in resp:
                 line = line.decode("utf-8").strip()
@@ -218,29 +216,65 @@ def _call_ollama_tools(messages: list, model: str) -> dict:
 
                 msg = chunk.get("message", {})
 
-                # Accumule le contenu texte (thinking mode Qwen3)
+                # Accumule le texte — masque le thinking mode
                 token = msg.get("content", "")
                 if token:
-                    # Masque les tokens <think> pour ne pas polluer l affichage
-                    if "<think>" not in content_acc and "</think>" not in token:
-                        print(token, end="", flush=True)
                     content_acc += token
+                    if "<think>" in token:
+                        in_think = True
+                    if "</think>" in token:
+                        in_think = False
+                        continue
+                    if not in_think:
+                        print(token, end="", flush=True)
 
-                # Accumule les tool_calls
+                # Accumule et merge les tool_calls fragmentés
                 for tc in msg.get("tool_calls", []):
-                    tool_calls_acc.append(tc)
+                    idx = tc.get("index", len(tool_calls_map))
+                    fn = tc.get("function", {})
+
+                    if idx not in tool_calls_map:
+                        tool_calls_map[idx] = {
+                            "id": tc.get("id", f"call_{idx}"),
+                            "name": fn.get("name", ""),
+                            "arguments_str": ""
+                        }
+
+                    # Merge le nom si fragmenté
+                    if fn.get("name"):
+                        tool_calls_map[idx]["name"] = fn["name"]
+
+                    # Merge les arguments (peuvent arriver en plusieurs chunks)
+                    args = fn.get("arguments", "")
+                    if isinstance(args, str):
+                        tool_calls_map[idx]["arguments_str"] += args
+                    elif isinstance(args, dict):
+                        # Déjà parsé — stocker direct
+                        tool_calls_map[idx]["arguments_str"] = json.dumps(args)
 
                 if chunk.get("done"):
-                    if content_acc:
-                        print()  # newline final
-                    final_message = {
-                        "role": "assistant",
-                        "content": content_acc,
-                        "tool_calls": tool_calls_acc
-                    }
+                    if content_acc and not in_think:
+                        print()
                     break
 
-            return {"message": final_message}
+            # Reconstruit les tool_calls finaux avec arguments parsés
+            tool_calls_final = []
+            for idx in sorted(tool_calls_map.keys()):
+                tc = tool_calls_map[idx]
+                args_str = tc["arguments_str"].strip()
+                try:
+                    args = json.loads(args_str) if args_str else {}
+                except json.JSONDecodeError:
+                    args = {}
+                tool_calls_final.append({
+                    "function": {"name": tc["name"], "arguments": args}
+                })
+
+            return {"message": {
+                "role": "assistant",
+                "content": content_acc,
+                "tool_calls": tool_calls_final
+            }}
 
     except urllib.error.URLError as e:
         raise ConnectionError(f"Ollama indisponible: {e}")
