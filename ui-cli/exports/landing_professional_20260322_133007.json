@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "original_query": "  crée une page de vente landing page pour mon site de chaussur de sport ",
+    "stack": "html-tailwind",
+    "product_type": "landing",
+    "styles": [
+      "professional"
+    ],
+    "skill_query": "landing professional"
+  },
+  "direction": {
+    "design_direction": {
+      "pattern": "Product-Centric Social Proof",
+      "style": "Athletic Professional",
+      "mood": "Energetic, Trustworthy, Premium",
+      "rationale": "Sports shoes require high visual appeal to showcase design combined with trust signals (reviews, tech specs) to justify performance claims. The layout balances product imagery with conversion elements using the provided professional style base."
+    },
+    "colors": {
+      "primary": "#0EA5E9",
+      "secondary": "#38BDF8",
+      "cta": "#F97316",
+      "background": "#FFFFFF",
+      "text": "#1E293B"
+    },
+    "typography": {
+      "heading": "Outfit",
+      "body": "Work Sans",
+      "scale": "Large hero headings, clear body hierarchy"
+    },
+    "key_effects": [
+      "Product hover zoom",
+      "Trust badge pulse",
+      "Smooth scroll anchor"
+    ],
+    "anti_patterns": [
+      "Cluttered navigation",
+      "Low resolution product images",
+      "Hidden sizing info"
+    ],
+    "ux_priorities": [
+      "Mobile-first product gallery",
+      "Fast image loading",
+      "Clear size guide access"
+    ],
+    "stack_notes": "Use Tailwind utility classes for responsive grid; optimize product images to WebP/AVIF for performance.",
+    "confidence": "high",
+    "clarification_needed": null
+  }
+}
