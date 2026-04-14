@@ -1,0 +1,34 @@
+{
+  "directions": [
+    {
+      "name": "Urgence & Performance",
+      "angle": "Positionner la chaussure comme un outil de dépassement de soi disponible en quantité limitée grâce au tissage main, incitant à l'action immédiate.",
+      "tone": "Direct, dynamique, incitatif",
+      "focus_points": [
+        "Rareté du produit artisanal (stock limité)",
+        "Amorti EVA pour optimiser la vitesse et l'impact",
+        "Adhérence optimale pour ne perdre aucune seconde"
+      ]
+    },
+    {
+      "name": "Histoire & Style de Vie",
+      "angle": "Raconter l'expérience du coureur moderne qui ne choisit pas entre sport et élégance urbaine, faisant de la chaussure un compagnon de route émotionnel.",
+      "tone": "Narratif, inspirant, empathique",
+      "focus_points": [
+        "Alliance unique entre artisanat et modernité",
+        "Bien-être absolu et confort au quotidien",
+        "Polyvalence esthétique pour toutes les saisons"
+      ]
+    },
+    {
+      "name": "Confiance & Expertise",
+      "angle": "Éduquer le client sur la supériorité technique et la composition des matériaux pour justifier l'investissement et rassurer sur la durabilité.",
+      "tone": "Rassurant, analytique, professionnel",
+      "focus_points": [
+        "Détails techniques des matériaux (Maille, EVA, Caoutchouc)",
+        "Preuves de durabilité et de respirabilité",
+        "Précision du guide des tailles homme (39-44)"
+      ]
+    }
+  ]
+}

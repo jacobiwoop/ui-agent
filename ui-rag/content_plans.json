@@ -1,0 +1,235 @@
+{
+  "plans": [
+    {
+      "direction_name": "Urgence & Performance",
+      "modules": [
+        {
+          "id": "hero",
+          "brief": "Titre percutant axé sur la performance immédiate et la rareté. Sous-titre mettant en avant l'amorti EVA pour la vitesse. Visuel dynamique de la chaussure en action.",
+          "key_elements": [
+            "Badge 'Stock Limité'",
+            "Titre : 'Dépassez vos limites avant la rupture'",
+            "Bouton CTA : 'Commander maintenant'"
+          ]
+        },
+        {
+          "id": "problems",
+          "brief": "Identifier les frustrations du coureur : chaussures lourdes, pieds qui chauffent, manque d'adhérence qui coûte des secondes.",
+          "key_elements": [
+            "Icônes : Poids, Chaleur, Glissade",
+            "Texte : 'Ne laissez plus votre équipement vous freiner'",
+            "Contraste visuel sombre"
+          ]
+        },
+        {
+          "id": "benefits",
+          "brief": "Présenter les solutions techniques comme des avantages compétitifs : EVA pour l'impact, Maille pour le flux d'air, Caoutchouc pour la grip.",
+          "key_elements": [
+            "Focus : 'Amorti Nuageux'",
+            "Focus : 'Respirabilité Maximale'",
+            "Focus : 'Adhérence Totale'"
+          ]
+        },
+        {
+          "id": "urgency",
+          "brief": "Expliquer que le tissage main limite la production quotidienne. Créer un sentiment de peur de manquer (FOMO).",
+          "key_elements": [
+            "Compteur de stock restant",
+            "Mention : 'Fabrication artisanale limitée'",
+            "Timer de fin d'offre"
+          ]
+        },
+        {
+          "id": "testimonials",
+          "brief": "Avis clients centrés sur l'amélioration des temps de course et la sensation de légèreté immédiate.",
+          "key_elements": [
+            "Citations : 'J'ai battu mon record'",
+            "Photos : Coureurs en action",
+            "Étoiles : 5/5"
+          ]
+        },
+        {
+          "id": "trust",
+          "brief": "Rassurer sur la livraison rapide et la possibilité de retour pour lever les derniers freins à l'achat impulsif.",
+          "key_elements": [
+            "Badge : 'Livraison Express'",
+            "Badge : 'Satisfait ou Remboursé'",
+            "Icônes de paiement sécurisé"
+          ]
+        },
+        {
+          "id": "cod-form",
+          "brief": "Formulaire de commande simplifié pour réduire la friction. Demander uniquement l'essentiel pour valider l'achat rapidement.",
+          "key_elements": [
+            "Champs : Nom, Téléphone, Adresse",
+            "Sélecteur de taille rapide",
+            "Bouton : 'Valider ma commande'"
+          ]
+        },
+        {
+          "id": "cta-final",
+          "brief": "Dernier appel à l'action rappelant la rareté du produit artisanal et l'opportunité de performance.",
+          "key_elements": [
+            "Texte : 'Dernières paires disponibles'",
+            "Bouton : 'Je profite maintenant'",
+            "Mention : 'Expédition sous 24h'"
+          ]
+        }
+      ]
+    },
+    {
+      "direction_name": "Histoire & Style de Vie",
+      "modules": [
+        {
+          "id": "hero",
+          "brief": "Visuel lifestyle urbain et sport. Titre évoquant l'alliance entre élégance et mouvement. Ton inspirant et émotionnel.",
+          "key_elements": [
+            "Image : Ville et Nature",
+            "Titre : 'L'élégance du mouvement urbain'",
+            "Bouton CTA : 'Découvrir l'expérience'"
+          ]
+        },
+        {
+          "id": "description",
+          "brief": "Raconter l'histoire du tissage main. Mettre en avant l'humain derrière la chaussure et l'attention portée aux détails.",
+          "key_elements": [
+            "Paragraphe narratif",
+            "Focus : 'Artisanat & Modernité'",
+            "Photo : Détail du tissage"
+          ]
+        },
+        {
+          "id": "how-it-works",
+          "brief": "Expliquer le processus de création : de la sélection du fil à la finition main. Valoriser le temps passé pour le confort du client.",
+          "key_elements": [
+            "Étapes : 1. Tissage, 2. Assemblage, 3. Finition",
+            "Icônes : Main, Fil, Chaussure",
+            "Texte : 'Fait avec passion'"
+          ]
+        },
+        {
+          "id": "benefits",
+          "brief": "Mettre en avant le bien-être absolu et la polyvalence saisonnière. La chaussure comme compagnon de vie, pas seulement de sport.",
+          "key_elements": [
+            "Focus : 'Confort 24/7'",
+            "Focus : '4 Saisons'",
+            "Focus : 'Style Polyvalent'"
+          ]
+        },
+        {
+          "id": "testimonials",
+          "brief": "Témoignages sur le confort au quotidien et les compliments reçus sur le style. Aspect émotionnel et social.",
+          "key_elements": [
+            "Citations : 'Je ne les quitte plus'",
+            "Photos : Usage quotidien",
+            "Étoiles : 5/5"
+          ]
+        },
+        {
+          "id": "trust",
+          "brief": "Garantie de qualité premium et engagement sur la satisfaction client. Créer un lien de confiance durable.",
+          "key_elements": [
+            "Badge : 'Qualité Premium'",
+            "Texte : 'Garantie Confort'",
+            "Support client réactif"
+          ]
+        },
+        {
+          "id": "cod-form",
+          "brief": "Formulaire accueillant et simple. Insister sur la facilité à rejoindre cette communauté de coureurs stylés.",
+          "key_elements": [
+            "Titre : 'Rejoignez le mouvement'",
+            "Champs simplifiés",
+            "Bouton : 'Je commande'"
+          ]
+        },
+        {
+          "id": "cta-final",
+          "brief": "Invitation à vivre l'expérience plutôt qu'à acheter un produit. Ton chaleureux et inclusif.",
+          "key_elements": [
+            "Texte : 'Votre nouveau compagnon vous attend'",
+            "Bouton : 'Commencer l'aventure'",
+            "Visuel : Chaussure portée décontractée"
+          ]
+        }
+      ]
+    },
+    {
+      "direction_name": "Confiance & Expertise",
+      "modules": [
+        {
+          "id": "hero",
+          "brief": "Titre technique et autoritaire. Mettre en avant la supériorité des matériaux et la conception ingénieuse.",
+          "key_elements": [
+            "Titre : 'Ingénierie textile de pointe'",
+            " Sous-titre : 'Analyse des matériaux premium'",
+            "Bouton CTA : 'Voir les spécifications'"
+          ]
+        },
+        {
+          "id": "benefits",
+          "brief": "Liste détaillée des avantages techniques : densité de la maille, densité de l'EVA, composition du caoutchouc.",
+          "key_elements": [
+            "Focus : 'Maille Haute Densité'",
+            "Focus : 'EVA Haute Résilience'",
+            "Focus : 'Caoutchouc Longue Durée'"
+          ]
+        },
+        {
+          "id": "description",
+          "brief": "Explication approfondie de la construction de la chaussure. Justifier la durabilité et la respirabilité par la science des matériaux.",
+          "key_elements": [
+            "Schéma éclaté de la chaussure",
+            "Texte technique détaillé",
+            "Focus : 'Durabilité prouvée'"
+          ]
+        },
+        {
+          "id": "comparison",
+          "brief": "Tableau comparatif objectif entre cette chaussure artisanale et les sneakers industrielles standards.",
+          "key_elements": [
+            "Colonnes : 'Notre Modèle' vs 'Standard'",
+            "Lignes : Respirabilité, Amorti, Finition",
+            "Checkmarks verts vs Croix rouges"
+          ]
+        },
+        {
+          "id": "testimonials",
+          "brief": "Avis vérifiés mettant l'accent sur la longévité du produit et le respect des tailles indiquées.",
+          "key_elements": [
+            "Citations : 'Toujours comme neuves après 6 mois'",
+            "Mention : 'Taille parfaitement respectée'",
+            "Badge : 'Avis Vérifiés'"
+          ]
+        },
+        {
+          "id": "trust",
+          "brief": "Afficher les garanties de remboursement, les sécurités de paiement et la précision du guide des tailles (39-44).",
+          "key_elements": [
+            "Guide des tailles détaillé",
+            "Badge : 'Paiement 100% Sécurisé'",
+            "Politique de retour claire"
+          ]
+        },
+        {
+          "id": "cod-form",
+          "brief": "Formulaire rassurant avec mention explicite de la protection des données et de la confirmation de commande immédiate.",
+          "key_elements": [
+            "Mention : 'Vos données sont protégées'",
+            "Récapitulatif de commande clair",
+            "Bouton : 'Commander en toute confiance'"
+          ]
+        },
+        {
+          "id": "cta-final",
+          "brief": "Appel à l'investissement dans la qualité. Positionner l'achat comme un choix rationnel et durable.",
+          "key_elements": [
+            "Texte : 'Investissez dans la durabilité'",
+            "Bouton : 'Choisir l'excellence'",
+            "Rappel : 'Tailles 39-44 disponibles'"
+          ]
+        }
+      ]
+    }
+  ]
+}

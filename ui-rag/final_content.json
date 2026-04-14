@@ -1,0 +1,163 @@
+{
+  "directions_content": [
+    {
+      "direction": "Urgence & Performance",
+      "content": {
+        "hero": {
+          "title": "Dépassez vos limites maintenant",
+          "subtitle": "Stock limité : la technologie EVA pour une performance immédiate",
+          "body": "Libérez votre potentiel avec des sneakers conçues pour l'exigence. Fraîcheur constante, légèreté absolue.",
+          "cta": "Je profite"
+        },
+        "benefits": {
+          "title": "Votre avantage concurrentiel",
+          "subtitle": "Gagnez du temps et de l'énergie dès le premier kilomètre",
+          "body": "• Légèreté explosive pour gagner en vitesse\n• Amorti réactif pour protéger sans ralentir\n• Adhérence totale pour des virages serrés",
+          "cta": ""
+        },
+        "how-it-works": {
+          "title": "Ingénierie de pointe",
+          "subtitle": "Comprendre la technologie EVA",
+          "body": "La semelle EVA agit comme un ressort : elle absorbe l'impact et renvoie l'énergie instantanément pour propulser votre foulée suivante.",
+          "cta": ""
+        },
+        "urgency": {
+          "title": "Alerte Stock",
+          "subtitle": "Ne manquez pas cette opportunité",
+          "body": "Offre performance expire dans 04h 32m\nBarre de stock : 87% des paires déjà réservées",
+          "cta": ""
+        },
+        "testimonials": {
+          "title": "Preuves de performance",
+          "subtitle": "Ils ont transformé leur running",
+          "body": "★ ★ ★ ★ ★ \"J'ai battu mon record de 10km grâce à cet amorti\" - Thomas V.\n★ ★ ★ ★ ★ \"Réactivité incroyable dès la première sortie\" - Marc D.",
+          "cta": ""
+        },
+        "trust": {
+          "title": "Transaction Sécurisée",
+          "subtitle": "Zéro risque, 100% performance",
+          "body": "Paiement 100% Sécurisé\nExpédition 24h\nSupport Prioritaire",
+          "cta": ""
+        },
+        "cta-final": {
+          "title": "Dernière ligne droite",
+          "subtitle": "Ne laissez pas la performance vous échapper",
+          "body": "Les stocks s'épuisent rapidement. Sécurisez votre paire avant la rupture.",
+          "cta": "COMMANDER MA PAIRE MAINTENANT"
+        },
+        "cod-form": {
+          "title": "Finaliser ma commande",
+          "subtitle": "Livraison Rapide & Paiement à la livraison disponible",
+          "body": "Remplissez le formulaire ci-dessous. Validation immédiate.",
+          "cta": "Valider Commande"
+        }
+      }
+    },
+    {
+      "direction": "Histoire & Style de Vie",
+      "content": {
+        "hero": {
+          "title": "Une Seule Sneaker pour Tout Votre Quotidien",
+          "subtitle": "Du running matinal aux réunions urbaines, vivez libre toute l'année.",
+          "body": "Libérez votre potentiel avec une chaussure conçue pour l'homme exigeant. Où le style rencontre la performance technique pour une expérience de légèreté unique.",
+          "cta": "Découvrir"
+        },
+        "problems": {
+          "title": "Fatigué de changer de chaussures entre le sport et le travail ?",
+          "subtitle": "Marre des pieds qui chauffent en été ou gèlent en hiver ?",
+          "body": "Chaque changement de tenue est une perte de temps précieuse. Vous méritez un confort constant, sans compromis sur votre style. Retrouvez le plaisir d'une routine simplifiée et gagnez en sérénité dès le matin.",
+          "cta": ""
+        },
+        "description": {
+          "title": "Conçues pour suivre votre rythme",
+          "subtitle": "Un compagnon fidèle du printemps à l'hiver.",
+          "body": "Le mesh tissé respire avec vous, l'EVA épouse votre foulée. Une expérience de légèreté qui protège vos articulations tout en dynamisant votre marche. Polyvalentes par nature, elles s'adaptent à toutes les saisons pour devenir votre alliée quotidienne.",
+          "cta": "Voir la technologie"
+        },
+        "benefits": {
+          "title": "Polyvalence 365 jours",
+          "subtitle": "Confort immédiat sans période de rodage.",
+          "body": "• Style qui s'adapte à toutes vos tenues\n• Aération maximale pour une fraîcheur constante\n• Amorti supérieur pour protéger vos articulations\n• Adhérence durable sur tous les sols urbains et sportifs",
+          "cta": "Profiter des avantages"
+        },
+        "testimonials": {
+          "title": "Ils ont adopté le mouvement",
+          "subtitle": "Découvrez leurs histoires.",
+          "body": "\"Je les porte partout, je ne veux plus les quitter. Un confort bluffant.\" - Marc, Sportif urbain.\n\"Enfin une chaussure qui comprend mon emploi du temps chargé. Je gagne un temps fou.\" - Sophie, Cadre dynamique.",
+          "cta": "Lire plus d'avis"
+        },
+        "trust": {
+          "title": "Essayez-les dans votre vraie vie",
+          "subtitle": "30 jours pour vous convaincre.",
+          "body": "Nous sommes convaincus qu'elles deviendront indispensables. Profitez de notre garantie satisfaction totale et retour gratuit pour les adopter en toute confiance. Rassurer sur l'adoption au quotidien.",
+          "cta": "Voir la garantie"
+        },
+        "cta-final": {
+          "title": "REJOIGNEZ LE MOUVEMENT",
+          "subtitle": "Simplifiez votre vie dès aujourd'hui.",
+          "body": "Ne laissez plus vos chaussures dicter votre emploi du temps. Prenez le contrôle de votre confort et de votre style. La liberté commence aux pieds.",
+          "cta": "Je simplifie ma vie"
+        },
+        "cod-form": {
+          "title": "Commandez simplement, recevez confortablement",
+          "subtitle": "Option paiement à la livraison disponible.",
+          "body": "Remplissez le formulaire ci-dessous. Essayez chez vous avant de valider votre achat. Aucun risque, tout confort. Livraison rapide et discrète.",
+          "cta": "Je commande"
+        }
+      }
+    },
+    {
+      "direction": "Confiance & Expertise",
+      "content": {
+        "hero": {
+          "title": "Ingénierie de pointe pour la protection de vos articulations",
+          "subtitle": "Analyse technique : Mesh tissé haute densité et EVA à retour d'énergie",
+          "body": "Conçues pour l'exigence masculine. Alliez performance technique et préservation physique dès le premier kilomètre.",
+          "cta": "Voir les specs techniques"
+        },
+        "benefits": {
+          "title": "Architecture Conçue pour la Durabilité",
+          "subtitle": "Trois piliers techniques pour une performance soutenue",
+          "body": "• Absorption des chocs certifiée : Réduction de l'impact sur les genoux jusqu'à 30%.\n• Mesh tissé haute résistance : Aération constante sans compromettre la structure.\n• Caoutchouc haute densité : Adhérence maintenue après 500km d'usage.",
+          "cta": ""
+        },
+        "how-it-works": {
+          "title": "Zoom Matériaux : La Science du Confort",
+          "subtitle": "Décomposition technique de votre foulée",
+          "body": "1. Tige en Mesh Tissé : Structure alvéolaire pour une thermorégulation active.\n2. Semelle EVA Haute Densité : Compression optimisée pour un amorti dynamique.\n3. Semelle Extérieure Caoutchouc : Compound anti-usure pour une traction longue durée.",
+          "cta": ""
+        },
+        "comparison": {
+          "title": "Supériorité Technique Vérifiée",
+          "subtitle": "Comparatif : Notre Ingénierie vs Sneakers Standard",
+          "body": "Durabilité : Nous (5+ Ans) vs Standard (1 An).\nAmorti : Nous (EVA Haute Densité) vs Standard (Mousse Basique).\nRespirabilité : Nous (Mesh Tissé) vs Standard (Synthétique Simple).",
+          "cta": ""
+        },
+        "trust": {
+          "title": "Engagements de Qualité Industrielle",
+          "subtitle": "Votre investissement est protégé par nos garanties",
+          "body": "• Garantie Constructeur : 12 Mois couvrant les défauts de fabrication.\n• Matériaux Testés en Laboratoire : Validés pour une utilisation intensive.\n• Support Expert : Conseillers techniques disponibles pour toute question.",
+          "cta": ""
+        },
+        "testimonials": {
+          "title": "Retours d'Expérience Vérifiés",
+          "subtitle": "La preuve par l'usage intensif",
+          "body": "« Mes douleurs aux genoux ont disparu grâce à l'amorti EVA. » - Thomas, 45 ans, utilisation 6 mois.\n« Toujours comme neuves après un hiver rigoureux. La durabilité est réelle. » - Julien, 38 ans, utilisation quotidienne.",
+          "cta": ""
+        },
+        "cta-final": {
+          "title": "Sécurisez Votre Performance Physique",
+          "subtitle": "Qualité supérieure, prix juste. Un choix rationnel.",
+          "body": "Ne compromettez pas votre santé avec du matériel obsolète. Choisissez l'ingénierie conçue pour durer.",
+          "cta": "INVESTISSEZ DANS VOTRE SANTÉ"
+        },
+        "cod-form": {
+          "title": "Finalisation de Commande Sécurisée",
+          "subtitle": "Paiement à la livraison disponible pour un achat sans risque",
+          "body": "Vos données sont cryptées. Vérifiez votre colis avant paiement. Aucun débit immédiat.",
+          "cta": "Valider l'achat sécurisé"
+        }
+      }
+    }
+  ]
+}

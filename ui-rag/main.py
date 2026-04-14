@@ -15,6 +15,8 @@ from skill_runner import build_context_for_ai, is_rag_available
 from prompt_builder import build_prompt, build_feedback_prompt
 from ollama_client import get_design_direction, check_ollama_available, list_available_models
 from rag_agent import get_design_direction_agent
+from architect import expand_to_system_prompt
+from coder import generate_html
 
 SEPARATOR = "─" * 60
 
@@ -187,6 +189,7 @@ def interactive_mode(model: str, as_json: bool, verbose: bool):
     history = []
     last_direction = None
     last_analysis = None
+    last_spec_path = None
 
     while True:
         try:
@@ -217,6 +220,41 @@ def interactive_mode(model: str, as_json: bool, verbose: bool):
                 continue
             path = export_direction(last_direction, last_analysis, fmt="md")
             print(f"\n💾 Exporté → {path}")
+            continue
+
+        if query.lower() in ("export system", "export prompt"):
+            if not last_direction:
+                print("\n⚠️  Aucune direction générée.")
+                continue
+            print("\n🏗️  Expansion de la direction en Master Specification (cela peut prendre du temps)...")
+            system_prompt = expand_to_system_prompt(last_direction, last_analysis, model=model)
+            
+            slug = (last_analysis["product_type"] + "_" + "_".join(last_analysis["styles"][:1])).replace(" ", "-").lower()
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            path = f"exports/system_{slug}_{timestamp}.md"
+            
+            os.makedirs("exports", exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(system_prompt)
+            print(f"\n✅ Master Specification générée et exportée → {path}")
+            last_spec_path = path
+            continue
+
+        if query.lower() in ("export html", "export code"):
+            if not last_direction or not last_spec_path:
+                print("\n⚠️  Tu dois d'abord générer la spécification (export system).")
+                continue
+            
+            print(f"\n🏗️  Génération du code HTML via OpenCode (Patientez, cela peut prendre 5-10 min)...")
+            html_code = generate_html(last_spec_path, last_analysis["original_query"], model=model)
+            
+            slug = (last_analysis["product_type"] + "_" + "_".join(last_analysis["styles"][:1])).replace(" ", "-").lower()
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            path = f"exports/index_{slug}_{timestamp}.html"
+            
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(html_code)
+            print(f"\n✅ Code HTML généré et exporté → {path}")
             continue
 
         # ── Feedback (contexte sticky) ───────────────────────────
